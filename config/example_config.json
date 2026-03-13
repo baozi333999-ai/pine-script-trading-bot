@@ -1,0 +1,50 @@
+{
+  // Conservative strategy parameters
+  "conservative": {
+    "riskLevel": "low", // Low risk
+    "rewardToRiskRatio": 1.2, // Target reward to risk ratio
+    "maxDrawdown": 5, // Maximum drawdown in percentage
+    "tradeFrequency": "monthly" // How often trades are executed
+  },
+  // Balanced strategy parameters
+  "balanced": {
+    "riskLevel": "medium", // Medium risk
+    "rewardToRiskRatio": 1.5, // Target reward to risk ratio
+    "maxDrawdown": 10, // Maximum drawdown in percentage
+    "tradeFrequency": "weekly" // How often trades are executed
+  },
+  // Aggressive strategy parameters
+  "aggressive": {
+    "riskLevel": "high", // High risk
+    "rewardToRiskRatio": 2.0, // Target reward to risk ratio
+    "maxDrawdown": 20, // Maximum drawdown in percentage
+    "tradeFrequency": "daily" // How often trades are executed
+  },
+  // Custom parameter template
+  "custom": {
+    "riskLevel": "custom", // Specify a custom risk level
+    "rewardToRiskRatio": 1.0, // Custom target reward to risk ratio
+    "maxDrawdown": 15, // Custom maximum drawdown in percentage
+    "tradeFrequency": "custom" // Specify trade frequency
+  },
+  // Risk management settings
+  "riskManagement": {
+    "stopLoss": 1.5, // Stop loss percentage
+    "takeProfit": 3.0, // Take profit percentage
+    "trailingStop": true, // Use trailing stop loss
+    "trailingStopDistance": 0.5 // Distance for trailing stop loss
+  },
+  // Notification preferences
+  "notifications": {
+    "email": true, // Send notifications to email
+    "sms": false, // Send SMS notifications
+    "pushNotifications": true // Use push notifications
+  },
+  // Backtesting parameters
+  "backtesting": {
+    "startDate": "2020-01-01", // Start date for backtesting
+    "endDate": "2021-01-01", // End date for backtesting
+    "initialCapital": 10000, // Initial capital for backtesting
+    "transactionCost": 0.01 // Transaction cost percentage
+  }
+}
